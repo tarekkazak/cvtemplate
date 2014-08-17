@@ -1,0 +1,221 @@
+/*  Colors
+ *
+ *  bg & title - #08385a
+ *  h3bg & borders & links - #0b4c79
+ *  shadows & main border - #05253b
+ *
+ */
+
+
+/*  Reset  */
+
+body,div,dl,dt,dd,ul,li,ol,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+ol,ul {
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+abbr,acronym { border: 0;
+}
+
+/*  General   */
+
+body {
+    background: #ffffff;
+    font-size: 16px;
+    color: #000;
+    font-family:Palatino,"Palatino Linotype",Georgia,"Times New Roman",Times,serif;
+    letter-spacing: .02em;
+}
+
+a, a:hover, a:visited {
+    color: #0b4c79;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 58px;
+    color: #8449A0;
+    letter-spacing: .05em;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 22px;
+    color: #08385a;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 20px;
+    background: #372649;
+    padding: 10px 40px;
+    margin-left: -40px;
+    width: 450px;
+    color: #fff;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+h5 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 9px;
+}
+
+input {
+    width: 500px;
+}
+
+#education h5 {
+    margin-top: 0px;
+}
+
+#training h5 {
+    font-size: 14px;
+}
+
+/*  Content   */
+
+#wrapper {
+    background-color: #ffffff;
+    width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    /* box-shadow: 10px 10px 5px #05253b; */
+    -moz-box-shadow: 10px 10px 5px #05253b;
+    /* -webkit-box-shadow: 10px 10px 5px #fff; */
+    border: 1px solid #000;
+}
+
+#header {
+    padding-bottom: 100px;
+    border-bottom: 2px solid #372649;
+    height: 100%;
+    margin-bottom: 40px;
+}
+
+#title {
+    float: left;
+    margin-top: -20px;
+}
+
+#contact {
+    float: right;
+    margin-right: 40px;
+}
+
+#contact td {
+    padding-right: 0px;
+}
+
+#background {
+    clear: both;
+}
+
+#background p {
+    margin: 20px 60px 20px 40px;
+}
+
+#experience {
+    margin-bottom: 40px;
+}
+
+.exp {
+    margin: 10px 40px;
+}
+
+.year {
+    float: right;
+    margin-top: -40px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.gpa {
+    float: right;
+    margin-top: -20px;
+    margin-right: 40px;
+}
+
+.description {
+    clear: both;
+    margin: 20px 40px;
+}
+
+#education .exp {
+    margin-bottom: 30px;
+}
+
+#skills {
+    border-bottom: 2px solid #372649;
+    padding-bottom: 100px;
+}
+
+#skills ul {
+    margin: 20px;
+}
+
+#skills li {
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 210px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+#footer {
+    clear: both;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.list-item {
+    font-size: 13px;
+    margin: 0;
+}
+
+.list-item-bullet {
+    font-size: 14px;
+    display: list-item;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.list-group .list-item-bullet {
+    font-size: 14px;
+    display: list-item;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    list-style : initial;
+}
+
+.list-group-item {
+    border:none;
+    padding: 5px;
+}
+
+.list {
+    padding-left: 9px;
+    padding-top: 9px;
+}
+
+#core-comps, #experience {page-break-before: always;}

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>CV template app</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <!--[if lte IE 7]>
+    <style type="text/css">
+        #header {padding-bottom: 20px;}
+        #skills {padding-bottom: 20px;
+    </style>
+    <![endif]-->
+
+</head>
+<body ng-controller="controller">
+
+<div ng-view></div>
+<!--<div>
+    <div ng-repeat="(k,v) in content">
+        <h1>{{k}}</h1>
+        <div style="margin-left: 10px" ng-repeat="(x,y) in v">
+            <h2>{{x}}</h2>
+            <input ng-change="update(v,x,y,null)" type="text" ng-if="angular.isString(y)" ng-model="y">
+            <ul ng-if="angular.isArray(y)">
+                <li ng-repeat="item in y">
+                    <input ng-change="update(y, null,  item, $index)" ng-if="angular.isString(item)" type="text" ng-model="item"/>
+                    <div style="margin-left: 10px; margin-bottom: 20px" ng-if="angular.isObject(item) && !angular.isArray(item)" >
+                        <button ng-click="del($index, y)">del</button>
+                        <div ng-repeat="(x1,y1) in item">
+                            <h2>{{x1}}</h2>
+                            <input ng-change="update(item, x1, y1, null)" type="text" ng-if="angular.isString(y1)" ng-model="y1">
+                            <ul ng-if="angular.isArray(y1)">
+                                <li ng-repeat="item1 in y1">
+                                    <input ng-change="update(y1, null, item1, $index)" type="text" ng-model="item1"/><button ng-click="del($index, y1)">del</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div ng-if="angular.isObject(y) && !angular.isArray(y)" >
+                <div style="margin-left: 10px; margin-bottom: 20px" ng-repeat="(x1,y2) in y">
+                    <h2>{{x1}}</h2>
+                    <input ng-change="update(y, x1, y2, null)" type="text" ng-if="angular.isString(y2)" ng-model="y2">
+                    <ul ng-if="angular.isArray(y2)">
+                        <li ng-repeat="item in y2">
+                            <input ng-change="update(y2, null, item, $index)" ng-if="angular.isString(item)" type="text" ng-model="item"/>
+                            <div style="margin-bottom: 30px" ng-if="angular.isObject(item)" >
+                                <div ng-repeat="(x,y) in item">
+                                    <h2>{{x}}</h2>
+                                    <input ng-change="update(item, x, y, null)" type="text" ng-if="angular.isString(y)" ng-model="y">
+                                    <ul ng-if="angular.isArray(y)">
+                                        <li ng-repeat="item in y">
+                                            <input ng-change="update(y, null, item, $index)" type="text" ng-model="item"/>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<script data-main="app/main" src="bower_components/requirejs/require.js"></script>
+</body>
+</html>

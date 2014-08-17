@@ -1,0 +1,13 @@
+{
+    "name": "budget",
+    "version": "0.1.0",
+
+    "devDependencies": {
+        "angular": "1.2.9",
+        "angular-sanitize": "1.2.9",
+        "angular-route": "1.2.9",
+        "requirejs": "2.1.11",
+        "lodash": "2.4.1",
+        "bootstrap-sass" : "~3.x"
+    }
+}

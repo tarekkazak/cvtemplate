@@ -1,0 +1,252 @@
+{
+    "content": {
+        "fr": {
+            "info": {
+                "name": "Sana I. Oulmi",
+                "address": "1509-165, Côte-Ste-Catherine",
+                "phone": "(514) 996-7262",
+                "email": "ikram.oulmi@gmail.com",
+                "title": "Avocate membre du Barreau de Quebec"
+            },
+            "summary": {
+                "title": "Sommaire",
+                "skills": {
+                    "title": "Caractéristiques personnelles",
+                    "items": [
+                        "Excellent esprit d’analyse et de synthèse",
+                        "Excellentes capacités rédactionnelles",
+                        "Facilité de communication",
+                        "Persuasion, Diplomatie, Rigueur",
+                        "Leadership, Sens des responsabilités, Esprit d’équipe",
+                        "Polyvalence, gestion du travail urgent",
+                        "Bonne maîtrise des outils informatiques et de l’Internet",
+                        "Bonnes habiletés rédactionnelles",
+                        "Facilité d’apprentissage",
+                        "Connaissances en droit bancaire et crédit international"
+                    ]
+                }
+            },
+            "experience": {
+                "title": "Experience de travail",
+                "items": [
+                    {
+                        "startDate": "2007-12",
+                        "endDate": "Present",
+                        "title": "Avocate",
+                        "company": "MOGHRABI & MOGHRABI, AVOCATS",
+                        "tasks": [
+                            "Entrevue avec les clients",
+                            "Analyse de dossiers",
+                            "Emission et rédaction d’opinions juridiques",
+                            "Rédaction de procédures",
+                            "Préparation d’interrogatoires",
+                            "Représentations et plaidoirie à la cour",
+                            "Négociation de règlements à l’amiable",
+                            "Rédaction de contrats",
+                            "Incorporation et mise à jour de sociétés",
+                            "Enregistrement de marques de commerce",
+                            "Traduction de documents juridiques",
+                            "Embauche, formation, évaluation et gestion du",
+                            "personnel de soutien"
+                        ]
+                    },
+                    {
+                        "startDate": "2007-01",
+                        "endDate": "2007-06",
+                        "title": "Chercheure en droit",
+                        "company": "CENTRE DE RECHERCHE EN DROIT PRIVE ET COMPARE DU QUEBEC McGILL UNIVERSITY",
+                        "tasks": [
+                            "Recherches juridiques comparées sur des sujets variés de droit privé",
+                            "Recherches jurilinguistiques",
+                            "Rédaction de rapports de recherche détaillés",
+                            "Rédaction d’entrées terminologiques et définitionnelles à être intégrées à un dictionnaire bilingue de Droit des biens",
+                            "Traduction français-anglais et anglais-français"
+                        ]
+                    },
+                    {
+                        "startDate": "2007-11",
+                        "endDate": "2007-12",
+                        "title": "Avocate",
+                        "company": "ETUDE LÉGALE J.M. BELLAICHE, Montréal (Québec)",
+                        "tasks": [
+                            "Étude et analyse de dossiers",
+                            "Détermination des faits pertinents au dossier",
+                            "Recherche jurisprudentielle et doctrinale",
+                            "Détermination de solutions juridiques et de recours utiles",
+                            "Élaboration de défenses",
+                            "Élaboration des arguments de plaidoirie",
+                            "Rédaction d’actes de procédure",
+                            "Rédaction de différents documents juridiques",
+                            "Gestion de cabinet",
+                            "Facturation"
+
+                        ]
+                    },
+                    {
+                        "startDate": "Ete 2003",
+                        "endDate": "Hiver 2004",
+                        "title": "Assistante et auxiliaire de correction",
+                        "company": "FACULTÉ DE DROIT DE L’UNIVERSITÉ DE MONTRÉAL",
+                        "tasks": [
+                            "Assistanat",
+                            "Supervision d’examens",
+                            "Correction d’examens"
+
+                        ]
+                    }
+                ]
+            },
+            "education": {
+                "training": {
+                    "title": "FORMATION PROFESSIONNELLE",
+                    "items": [
+                        {
+                            "title": "Formation continue dans divers domaines juridiques",
+                            "startDate": "2009",
+                            "endDate": "2012",
+                            "items": [
+                                "Droit commercial",
+                                "Droit matrimonial",
+                                "Droit des successions",
+                                "Droit de l’immigration"
+                            ]
+                        },
+                        {
+                            "title": "Stage professionnel en milieu juridique",
+                            "startDate": "2005-03",
+                            "endDate": "2005-10",
+                            "facility": "ETUDE LÉGALE J.M. BELLAICHE, Montréal (Québec)",
+                            "items": [
+                                "Entrevue avec les clients",
+                                "Étude et analyse de dossier",
+                                "Détermination des faits pertinents",
+                                "Recherche jurisprudentielle et doctrinale",
+                                "Détermination de solutions juridiques et des recours utiles",
+                                "Rédaction d’avis juridiques",
+                                "Élaboration de défenses",
+                                "Élaboration des arguments de plaidoirie",
+                                "Rédaction d’actes de procédure",
+                                "Rédaction de différents documents juridiques",
+                                "Préparation d’interrogatoires",
+                                "Facturation"
+                            ]
+                        },
+                        {
+                            "title": "FACULTÉ DE DROIT DE L’UNIVERSITÉ DE MONTRÉAL",
+                            "startDate": "2000",
+                            "endDate": "2001",
+                            "facility": "FACULTÉ DE DROIT DE L’UNIVERSITÉ DE MONTRÉAL",
+                            "items": [
+                                "Représentation d’un client fictif",
+                                "Production d’une défense",
+                                "Rédaction d’un mémoire",
+                                "Plaidoirie devant des juges de la Cour Supérieure"
+                            ]
+                        }
+                    ]
+                },
+                "academic": {
+                    "title": "FORMATION ACADEMIQUE",
+                    "items": [
+                        {
+                            "degree": "Formation professionnelle des avocats",
+                            "school": "Ecole du Barreau de Montréal",
+                            "startDate": "2001",
+                            "endDate": "2002"
+                        },
+                        {
+                            "degree": "Baccalauréat (licence) en Droit (LL.B.)",
+                            "school": "Université de Montréal",
+                            "startDate": "1998",
+                            "endDate": "2001"
+                        },
+                        {
+                            "degree": "Baccalauréat International (mention bien)",
+                            "school": "Collège Jean-de-Brébeuf, Montréal",
+                            "startDate": "1996",
+                            "endDate": "1998"
+                        },
+                        {
+                            "degree": "Diplôme d’Études Collégiales (D.E.C)",
+                            "school": "Collège Jean-de-Brébeuf, Montréal",
+                            "startDate": "1996",
+                            "endDate": "1998"
+                        },
+                        {
+                            "degree": "Diplôme d'Études Secondaires",
+                            "school": "Ecole Antoine de St-Exupéry, Montéal",
+                            "startDate": "1995",
+                            "endDate": "1996"
+                        }
+                    ]
+                },
+                "ongoing": {
+                    "title": "FORMATION EN COURS",
+                    "items": [
+                        {
+                            "degree": "Programme intégré Maîtrise et Doctorat en droit des affaires (LL.M., LL.D.)",
+                            "school": "Université de Montréal",
+                            "additional": "Option : Droit international privé - Matières commerciales et patrimoniales"
+                        }
+                    ]
+                }
+            },
+            "extracurricular": {
+                "title": "ACTIVITES BENEVOLES ET PARASCOLAIRES",
+                "items": [
+                    {
+                        "role": "Présidente et secrétaire",
+                        "startDate": "2000",
+                        "endDate": "2001",
+                        "organization": "Comité pour le partage des cultures africaines, Université de Montréal",
+                        "tasks": [
+                            "Organisation d’évènements culturels visant l’échange et le rapprochement entre les peuples",
+                            "Médiation de débats",
+                            "Tenue de réunions et rédaction des procès verbaux Prise de décisions",
+                            "Rédaction de statuts",
+                            "Vérification de la trésorerie",
+                            "Relations publiques",
+                            "Obtention de subventions et de commandites"
+                        ]
+                    },
+                    {
+                        "role": "Membre active",
+                        "startDate": "1999",
+                        "endDate": "2000",
+                        "organization": "Comité pour le partage des cultures africaines, Université de Montréal",
+                        "tasks": [
+                            "Participation active aux réunions du comité",
+                            "Participation à l’organisation d’activités, de conférences et d’évènements culturels"
+                        ]
+                    },
+                    {
+                        "role": "Trésorière et membre de l’équipe de rédaction",
+                        "startDate": "1996",
+                        "endDate": "1998",
+                        "organization": "Journal du Baccalauréat International « Le Lien »,Collège Jean-de-Brébeuf",
+                        "tasks": [
+                            "Participation active aux réunions du comité",
+                            "Participation à l’organisation d’activités, de conférences et d’évènements culturels",
+                            "Estimations budgétaires",
+                            "Demandes de subventions",
+                            "Tenue de livres",
+                            "Gestion des fonds",
+                            "Rédaction d’articles sur divers sujets d’actualité Distribution du journal au sein du Collège",
+                            "Distribution du journal dans les différentes écoles dispensant le programme du Baccalauréat International à travers le monde"
+                        ]
+                    }
+                ]
+            },
+            "achievements" : {
+                "title" : "Distinctions",
+                "items" : [
+                    "Récipiendaire d’une bourse de rédaction de mémoire de Maîtrise",
+                    "Recommandée pour nomination au gala « Les Leaders de demain » de l’Association du Jeune Barreau de Montréal (gala de reconnaissance de l’excellence professionnelle)"
+                ]
+            }
+        }
+    }
+
+}
+
+
