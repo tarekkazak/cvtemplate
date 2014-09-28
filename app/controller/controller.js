@@ -7,7 +7,8 @@ define(['angular',
 
     /* Controllers */
 
-    return function ($scope, DataService) {
+    return
+    function ($scope, DataService) {
         var loadedData;
         $scope.angular = angular;
         DataService.get(function(data) {

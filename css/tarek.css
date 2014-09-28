@@ -3224,3 +3224,41 @@ td.visible-print {
 .list-group-item {
   padding: 0px 15px;
 }
+
+/* line 4, ../resources/sass/lib/_table.scss */
+.table > tbody > tr > td, .table thead > tr > td {
+  width: 130px;
+}
+/* line 11, ../resources/sass/lib/_table.scss */
+.table > thead > tr > th {
+  font-weight: bold;
+  border-bottom: none;
+  padding-bottom: 18px;
+  font-size: 18px;
+}
+/* line 22, ../resources/sass/lib/_table.scss */
+.table > tbody > tr > td {
+  padding: 9px 0px;
+}
+
+/* line 2, ../resources/sass/_custom.scss */
+#competencies ul {
+  width: 300px;
+}
+/* line 5, ../resources/sass/_custom.scss */
+#competencies li {
+  font-size: 14px;
+  border-bottom: 1px solid rgba(207, 207, 207, 0.58);
+  margin-bottom: 6px;
+  padding-bottom: 3px;
+}
+/* line 11, ../resources/sass/_custom.scss */
+#competencies li:first-child {
+  font-weight: bold;
+  margin-bottom: 9px;
+  border-bottom: none;
+}
+/* line 17, ../resources/sass/_custom.scss */
+#competencies li:last-child {
+  border-bottom: none;
+}

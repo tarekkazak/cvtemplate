@@ -1,0 +1,28 @@
+.table {
+  > tbody, thead {
+    > tr {
+      > td {
+        width: 130px;
+      }
+    }
+  }
+  > thead {
+    > tr {
+      > th {
+        font-weight: bold;
+        border-bottom: none;
+        padding-bottom: 18px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  > tbody {
+    > tr {
+      > td {
+        padding: 9px 0px;
+      }
+    }
+  }
+
+}

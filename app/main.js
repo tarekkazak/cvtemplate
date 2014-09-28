@@ -3,17 +3,14 @@
  */
 requirejs.config({
     paths: {
-        angular: '../bower_components/angular/angular',
-        angularRoute : '../bower_components/angular-route/angular-route',
+        angular: '../bower_components/angular/angular.min',
+        //angularRoute : '../bower_components/angular-route/angular-route',
         lodash: '../bower_components/lodash/dist/lodash.min'
     },
-    urlArgs : 'd=' + (new Date()).getTime(),
+    //urlArgs : 'd=' + (new Date()).getTime(),
     shim: {
         'angular' : {
             exports : 'angular'
-        },
-        'angularRoute': {
-            deps : ['angular']
         },
         'lodash': {
             exports : '_'

@@ -11,10 +11,12 @@ var client = new pdf.Pdfcrowd('tarekkazak', '1c5f2f9eae30f410552576dcee2b2d6e');
         {
             width: "8.5in",
             height: "11in",
-            vmargin: ".4in",
             pdf_scaling_factor : 1,
-            margin_top : "0.2in",
-            max_pages : 2
+            margin_top : "0.45in",
+            margin_bottom : "0.45in",
+            margin_left : "0.4in",
+            margin_right : "0.3in",
+            max_pages : 3
         });
 //Or a local HTML file:
 

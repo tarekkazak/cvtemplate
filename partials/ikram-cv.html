@@ -1,27 +1,27 @@
-<div ng-show="!editMode" id="wrapper">
+<div class="ikram" id="wrapper">
 
 <div id="header">
 
     <div id="title">
         <h1>{{content.info.name}}</h1>
-        <h2>{{content.info.title}}</h2>
+        <h2 style="color: #000000">{{content.info.title}}</h2>
     </div><!-- end title -->
 
     <div id="contact">
 
         <table summary="Contact Info">
             <tr>
-                <td>Address</td>
+                <td>Adresse</td>
                 <td> | </td>
                 <td>{{content.info.address}}</td>
             </tr>
             <tr>
-                <td>Email</td>
+                <td>Courriel</td>
                 <td> | </td>
                 <td><a href="mailto:"{{content.info.email}}>{{content.info.email}}</a></td>
             </tr>
             <tr>
-                <td>Phone</td>
+                <td>T&eacute;l&eacute;phone</td>
                 <td> | </td>
                 <td>{{content.info.phone}}</td>
             </tr>
@@ -32,36 +32,23 @@
 </div><!-- end header -->
 
 <div id="background">
-    <h3>{{content.summary.title}}</h3>
-    <button ng-click="inEditSummaryMode = !inEditSummaryMode">edit</button>
-
-    <input ng-show="inEditSummaryMode" type="text" ng-model="content.summary.title"  ng-change="update(content.summary.skills, 'title',  content.summary.skills.title, null)">
+    <h3>{{content.intro.title}}</h3>
+    <button ng-show="editMode" ng-click="inEditIntroMode = !inEditIntroMode">edit</button>
 
     <div class="exp">
-        <h4>{{content.summary.skills.title}}</h4>
-        <ul class="list">
-            <li class="list-item" ng-repeat="item in content.summary.skills.items">{{item}}</li>
-        </ul>
-        <div ng-show="inEditSummaryMode">
+        <h5>{{content.intro.intro}}</h5>
+    </div>
 
-            <div><label>title</label><input type="text" ng-model="content.summary.skills.title"  ng-change="update(content.summary.skills, 'title', content.summary.skills.title, null)"></div>
-            <div>
-                <label>items</label>
-                <ul>
-                    <li ng-repeat="item in content.summary.skills.items">
-                        <input ng-change="update(content.summary.skills.items, null, item, $index)" type="text" ng-model="item"/><button ng-click="del($index, content.summary.skills.items)">del</button>
-                    </li>
-                </ul>
-                <input type="text" ng-model="newSummaryItemListItem"/><button ng-click="addItemToList(content.summary.skills.items, newSummaryItemListItem)">add</button>
+    <div ng-show="inEditIntroMode">
+        <div><label>title</label><input type="text" ng-model="content.intro.title"  ng-change="update(content.intro, 'title', content.intro.title, null)"></div>
+        <div><label>intro</label><input type="text" ng-model="content.intro.intro"  ng-change="update(content.intro, 'intro', content.intro.intro, null)"></div>
 
-            </div>
-        </div>
     </div>
 </div><!-- end bio -->
 
 <div id="experience">
     <h3>{{content.experience.title}}</h3>
-    <button ng-click="inEditExperienceMode = !inEditExperienceMode">edit</button>
+    <button ng-show="editMode" ng-click="inEditExperienceMode = !inEditExperienceMode">edit</button>
 
     <div ng-show="inEditExperienceMode">
         <div><label>company</label><input type="text" ng-model="newExperienceCompany"></div>
@@ -82,20 +69,23 @@
         <h4>{{item.company}}</h4>
         <h5>{{item.title}}</h5>
         <p class="year">{{item.startDate}} {{item.endDate}}</p>
+        <p class="year-secondary">{{item.secondaryStartDate}} {{item.secondaryEndDate}}</p>
         <ul class="list">
             <li class="list-item" ng-repeat="task in item.tasks">{{task}}</li>
         </ul>
 
         <div ng-show="inEditExperienceMode">
 
-            <div><label>title</label><input type="text" ng-model="item.company"  ng-change="update(training, 'company', item.company, null)"></div>
-            <div><label>facility</label><input type="text" ng-model="item.title"  ng-change="update(training, 'title', item.title, null)"></div>
-            <div><label>startDate</label><input type="text" ng-model="item.startDate"  ng-change="update(training, 'startDate', item.startDate, null)"></div>
-            <div><label>endDate</label><input type="text" ng-model="item.endDate"  ng-change="update(training, 'endDate', item.endDate, null)"></div>
+            <div><label>title</label><input type="text" ng-model="item.company"  ng-change="update(item, 'company', item.company, null)"></div>
+            <div><label>facility</label><input type="text" ng-model="item.title"  ng-change="update(item, 'title', item.title, null)"></div>
+            <div><label>startDate</label><input type="text" ng-model="item.startDate"  ng-change="update(item, 'startDate', item.startDate, null)"></div>
+            <div><label>endDate</label><input type="text" ng-model="item.endDate"  ng-change="update(item, 'endDate', item.endDate, null)"></div>
+            <div><label>secondaryStartDate</label><input type="text" ng-model="item.secondaryStartDate"  ng-change="update(item, 'secondaryStartDate', item.secondaryStartDate, null)"></div>
+            <div><label>secondarySendDate</label><input type="text" ng-model="item.secondaryEndDate"  ng-change="update(item, 'secondaryEndDate', item.secondaryEndDate, null)"></div>
             <div>
                 <label>tasks</label>
                 <ul>
-                    <li ng-repeat="task in item.tasks">
+                    <li ng-repeat="task in item.tasks track by $index">
                         <input ng-change="update(item.tasks, null, task, $index)" type="text" ng-model="task"/><button ng-click="del($index, item.tasks)">del</button>
                     </li>
                 </ul>
@@ -109,63 +99,11 @@
 
 </div><!-- end experience -->
 
-<div id="training">
-    <h3>{{content.education.training.title}}</h3>
-    <button ng-click="inEditTrainingMode = !inEditTrainingMode">edit</button>
 
-    <div ng-show="inEditTrainingMode">
-        <div><label>title</label><input type="text" ng-model="newTrainingTitle"></div>
-        <div><label>facility</label><input type="text" ng-model="newTrainingFacility"></div>
-        <div><label>startDate</label><input type="text" ng-model="newTrainingStartDate"></div>
-        <div><label>endDate</label><input type="text" ng-model="newTrainingEndDate"></div>
-        <div>
-            <label>items</label>
-            <input type="text" ng-model="newTrainingItems"/>
-        </div>
-        <button ng-click="add(content.education.training.items, [{field : 'title', value : newTrainingTitle}, {field : 'facility', value : newTrainingFacility}, {field : 'startDate', value: newTrainingStartDate}, {field : 'endDate', value : newTrainingEndDate}, {field : 'items', value : newTrainingItems.split(',')}])">add</button>
-    </div>
-
-    <input ng-show="inEditTrainingMode" type="text" ng-model="content.education.training.title"  ng-change="update(content.education.training, 'title', content.education.training.title, null)">
-
-    <div class="exp" ng-repeat="training in content.education.training.items">
-        <div ng-show="inEditTrainingMode"><button ng-click="del($index, content.education.training.items)">delete item</button></div>
-        <h4>{{training.title}}</h4>
-        <h5>{{training.facility}}</h5>
-        <p class="year">{{training.startDate}}-{{training.endDate}}</p>
-        <ul class="list">
-            <li class="list-item" ng-repeat="item in training.items">{{item}}</li>
-        </ul>
-
-        <div ng-show="inEditTrainingMode">
-            <div><label>title</label><input type="text" ng-model="training.title"  ng-change="update(training, 'title', training.title, null)"></div>
-            <div><label>facility</label><input type="text" ng-model="training.facility"  ng-change="update(training, 'facility', training.facility, null)"></div>
-            <div><label>startDate</label><input type="text" ng-model="training.startDate"  ng-change="update(training, 'startDate', training.startDate, null)"></div>
-            <div><label>endDate</label><input type="text" ng-model="training.endDate"  ng-change="update(training, 'endDate', training.endDate, null)"></div>
-            <div>
-                <label>items</label>
-                <ul>
-                    <li ng-repeat="item in training.items">
-                        <input ng-change="update(training.items, null, item, $index)" type="text" ng-model="item"/><button ng-click="del($index, training.items)">del</button>
-                    </li>
-                </ul>
-                <input type="text" ng-model="newTrainingItemListItem"/><button ng-click="addItemToList(training.items, newTrainingItemListItem)">add</button>
-
-            </div>
-        </div>
-    </div>
-
-    <!--<div class="exp">
-        <h4>College Name | College Location</h4>
-        <h5>Major/Minor/Degree Earned</h5>
-        <p class="year">2000-2005</p>
-        <p class="gpa">3.7 GPA</p>
-    </div>-->
-
-</div>
 
 <div id="education">
     <h3>{{content.education.academic.title}}</h3>
-    <button ng-click="inEditAcademicgMode = !inEditAcademicgMode">edit</button>
+    <button ng-show="editMode" ng-click="inEditAcademicgMode = !inEditAcademicgMode">edit</button>
 
     <div ng-show="inEditAcademicgMode">
         <div><label>degree</label><input type="text" ng-model="newAcademicDegree"></div>
@@ -183,6 +121,8 @@
         <div ng-show="inEditAcademicgMode"><button ng-click="del($index, content.education.academic.items)">delete item</button></div>
         <h4>{{training.degree}}</h4>
         <h5>{{training.school}}</h5>
+        <h5 class="list-item">{{training.additional}}</h5>
+        <h5 class="list-item">{{training.status}}</h5>
         <p class="year">{{training.startDate}}-{{training.endDate}}</p>
 
         <div ng-show="inEditAcademicgMode">
@@ -199,43 +139,10 @@
 
 </div>
 
-<div id="ongoing">
-    <h3>{{content.education.ongoing.title}}</h3>
-    <button ng-click="inEditOngoingMode = !inEditOngoingMode">edit</button>
-
-    <div ng-show="inEditOngoingMode">
-        <div><label>degree</label><input type="text" ng-model="newOngoingDegree"></div>
-        <div><label>school</label><input type="text" ng-model="newOngoingSchool"></div>
-        <div><label>additional</label><input type="text" ng-model="newOngoingAdditional"></div>
-
-        <button ng-click="add(content.education.ongoing.items, [{field : 'degree', value : newOngoingDegree}, {field : 'school', value : newOngoingSchool}, {field : 'additional', value : newOngoingAdditional}])">add</button>
-    </div>
-
-    <input ng-show="inEditOngoingMode" type="text" ng-model="content.education.ongoing.title"  ng-change="update(content.education.ongoing, 'title', content.education.ongoing.title, null)">
-
-
-    <div class="exp" ng-repeat="training in content.education.ongoing.items">
-        <div ng-show="inEditOngoingMode"><button ng-click="del($index, content.education.ongoing.items)">delete item</button></div>
-        <h4>{{training.degree}}</h4>
-        <h5>{{training.school}}</h5>
-        <p>{{training.additional}}</p>
-
-
-        <div ng-show="inEditOngoingMode">
-            <div><label>degree</label><input type="text" ng-model="training.degree"  ng-change="update(training, 'degree', training.degree, null)"></div>
-            <div><label>school</label><input type="text" ng-model="training.school"  ng-change="update(training, 'school', training.school, null)"></div>
-            <div><label>additional</label><input type="text" ng-model="training.additional"  ng-change="update(training, 'additional', training.additional, null)"></div>
-
-        </div>
-    </div>
-
-
-
-</div>
 
 <div id="extracurricular">
     <h3>{{content.extracurricular.title}}</h3>
-    <button ng-click="inEditExtracurricularMode = !inEditExtracurricularMode">edit</button>
+    <button ng-show="editMode" ng-click="inEditExtracurricularMode = !inEditExtracurricularMode">edit</button>
 
     <div ng-show="inEditExtracurricularMode">
         <div><label>role</label><input type="text" ng-model="newExtracurricularRole"></div>
@@ -255,8 +162,11 @@
     <div class="exp" ng-repeat="activity in content.extracurricular.items">
         <div ng-show="inEditExtracurricularMode"><button ng-click="del($index, content.extracurricular.items)">delete item</button></div>
         <h4>{{activity.role}}</h4>
+        <h4 class="sub">{{activity.institution}}</h4>
         <h5>{{activity.organization}}</h5>
-        <p class="year">{{activity.startDate}}-{{activity.endDate}}</p>
+        <p ng-if="!activity.dateOnTwoLines" class="year">{{activity.startDate}}-{{activity.endDate}}</p>
+        <p ng-if="activity.dateOnTwoLines" class="year">{{activity.startDate}}-</p>
+        <p ng-if="activity.dateOnTwoLines" class="year-secondary">{{activity.endDate}}</p>
         <ul class="list">
             <li class="list-item" ng-repeat="task in activity.tasks">{{task}}</li>
         </ul>
@@ -269,7 +179,7 @@
             <div>
                 <label>items</label>
                 <ul>
-                    <li ng-repeat="item in activity.tasks">
+                    <li ng-repeat="item in activity.tasks track by $index">
                         <input ng-change="update(activity.tasks, null, item, $index)" type="text" ng-model="item"/><button ng-click="del($index, activity.tasks)">del</button>
                     </li>
                 </ul>
@@ -282,7 +192,45 @@
 
 
 </div>
-<button ng-click="save()">save</button>
+
+<div id="background">
+    <h3>{{content.summary.title}}</h3>
+    <button ng-show="editMode" ng-click="inEditSummaryMode = !inEditSummaryMode">edit</button>
+
+    <input ng-show="inEditSummaryMode" type="text" ng-model="content.summary.title"  ng-change="update(content.summary.skills, 'title',  content.summary.skills.title, null)">
+
+    <div class="exp">
+        <ul class="list" style="padding-top: 0px">
+            <li class="list-item" ng-repeat="item in content.summary.skills.items">{{item}}</li>
+        </ul>
+        <div ng-show="inEditSummaryMode">
+
+            <div><label>title</label><input type="text" ng-model="content.summary.skills.title"  ng-change="update(content.summary.skills, 'title', content.summary.skills.title, null)"></div>
+            <div>
+                <label>items</label>
+                <ul>
+                    <li ng-repeat="item in content.summary.skills.items track by $index">
+                        <input ng-change="update(content.summary.skills.items, null, item, $index)" type="text" ng-model="item"/><button ng-click="del($index, content.summary.skills.items)">del</button>
+                    </li>
+                </ul>
+                <input type="text" ng-model="newSummaryItemListItem"/><button ng-click="addItemToList(content.summary.skills.items, newSummaryItemListItem)">add</button>
+
+            </div>
+        </div>
+    </div>
+</div><!-- end bio -->
+
+<div id="lang">
+    <h3>Langues</h3>
+
+    <div class="exp">
+        <ul class="list" >
+            <li class="list-item" >Fran&ccedil;ais, Anglais</li>
+        </ul>
+    </div>
+</div><!-- end bio -->
+<button ng-show="editMode" ng-click="save()">save</button>
+<!--<button ng-click="editMode = true">edit mode</button>-->
 
 <!--<div id="skills">
     <h3>Skills</h3>
@@ -353,4 +301,4 @@
     <p>Jan Dougherty | <a href="mailto:jan@janswebdev.com">jan@janswebdev.com</a> | (555)555-5555 | <a href="print.html">Print my Resume</a></p>
 </div>-->
 
-</div><!-- end wrapper -->
+</div>
