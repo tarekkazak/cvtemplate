@@ -41,7 +41,7 @@
 
     <div ng-show="inEditIntroMode">
         <div><label>title</label><input type="text" ng-model="content.intro.title"  ng-change="update(content.intro, 'title', content.intro.title, null)"></div>
-        <div><label>intro</label><input type="text" ng-model="content.intro.intro"  ng-change="update(content.intro, 'intro', content.intro.intro, null)"></div>
+        <div><label>intro</label><textarea type="text" ng-model="content.intro.intro"  ng-change="update(content.intro, 'intro', content.intro.intro, null)"></textarea></div>
 
     </div>
 </div><!-- end bio -->
@@ -230,7 +230,7 @@
     </div>
 </div><!-- end bio -->
 <button ng-show="editMode" ng-click="save()">save</button>
-<!--<button ng-click="editMode = true">edit mode</button>-->
+<button ng-click="editMode = true">edit mode</button>
 
 <!--<div id="skills">
     <h3>Skills</h3>
