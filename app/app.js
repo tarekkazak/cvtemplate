@@ -1,12 +1,3 @@
-
-/*define([
-    'angular',
-    'controller/controller',
-    'service/dataService'
-], function (angular, controller) {*/
-
-// Declare app level module which depends on filters, and services
-
     var budgetApp = angular.module('cvApp', ['ngRoute',
         'dataService'
     ]);
@@ -71,6 +62,4 @@
                 });
 
         });
-/*    return budgetApp;
-});*/
 
