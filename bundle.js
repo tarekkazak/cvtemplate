@@ -74,7 +74,8 @@
                     $http.get('data/content.json').success(callback);
             },
             save : function(data) {
-                $http.post('php/persistence.php', data).
+                       console.log(data);
+                $http.post('/save', data).
                     success(function (data) {
                         console.log('saved');
                         alert('saved');
